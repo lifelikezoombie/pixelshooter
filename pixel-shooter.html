@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
-<title>像素战机 | Pixel Fighter</title>
+<title>Pixel Fighter</title>
 <style>
 * {
   margin: 0;
@@ -165,49 +165,49 @@ input[type="range"]::-webkit-slider-thumb {
 </div>
 
 <div id="startScreen">
-  <div class="screen-title">像素战机</div>
-  <div class="screen-subtitle">PIXEL FIGHTER</div>
-  <button class="btn" id="startBtn">开始游戏</button>
+  <div class="screen-title">PIXEL FIGHTER</div>
+  <div class="screen-subtitle">Retro Space Shooter</div>
+  <button class="btn" id="startBtn">Start Game</button>
   <div class="volume-controls">
     <div class="volume-row">
       <span class="volume-label">BGM</span>
       <input type="range" id="bgmVolume" min="0" max="100" value="50">
     </div>
     <div class="volume-row">
-      <span class="volume-label">音效</span>
+      <span class="volume-label">SFX</span>
       <input type="range" id="seVolume" min="0" max="100" value="70">
     </div>
   </div>
-  <div class="controls-hint">触屏拖动 / 鼠标移动控制飞机<br>P 暂停 | R 重开</div>
+  <div class="controls-hint">Touch/Mouse to move ship<br>P Pause | R Restart</div>
 </div>
 
 <div id="pauseScreen" class="hidden">
-  <div class="screen-title">暂停</div>
-  <button class="btn" id="resumeBtn">继续</button>
-  <button class="btn" id="restartBtn1">重新开始</button>
+  <div class="screen-title">PAUSED</div>
+  <button class="btn" id="resumeBtn">Resume</button>
+  <button class="btn" id="restartBtn1">Restart</button>
   <div class="volume-controls">
     <div class="volume-row">
       <span class="volume-label">BGM</span>
       <input type="range" id="bgmVolumePause" min="0" max="100" value="50">
     </div>
     <div class="volume-row">
-      <span class="volume-label">音效</span>
+      <span class="volume-label">SFX</span>
       <input type="range" id="seVolumePause" min="0" max="100" value="70">
     </div>
   </div>
 </div>
 
 <div id="gameOverScreen" class="hidden">
-  <div class="screen-title">游戏结束</div>
+  <div class="screen-title">GAME OVER</div>
   <div class="stats-display">
-    <div class="stat-row">得分</div>
+    <div class="stat-row">Score</div>
     <div class="stat-value" id="finalScore">0</div>
-    <div class="stat-row" style="margin-top:20px">最高分</div>
+    <div class="stat-row" style="margin-top:20px">High Score</div>
     <div class="stat-value high-score" id="highScore">0</div>
-    <div class="stat-row" style="margin-top:20px">最高连击</div>
+    <div class="stat-row" style="margin-top:20px">Max Combo</div>
     <div class="stat-value" id="maxCombo">0</div>
   </div>
-  <button class="btn" id="restartBtn2">再来一局</button>
+  <button class="btn" id="restartBtn2">Play Again</button>
 </div>
 
 <script>
